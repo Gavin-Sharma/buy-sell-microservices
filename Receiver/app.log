@@ -1,0 +1,23 @@
+RECEIVER :: DEBUG – Received buy event with trace id c686f08d-c29e-4e69-b735-8cc106ff7ec8
+RECEIVER :: DEBUG – Received buy event with trace id 92df1f34-06d4-4b8c-8f2a-57e697639522
+RECEIVER :: DEBUG – Received buy event with trace id c423752b-7425-474a-a41c-7e502180d08a
+RECEIVER :: DEBUG – Received buy event with trace id e135d5c7-2dbd-4880-b94b-77e3b56c2730
+RECEIVER :: DEBUG – PRODUCER::producing buy event
+RECEIVER :: DEBUG – Sent message:
+{"type": "buy", "datetime": "2023-02-23T10:58:00Z", "payload": {"buy_id": "d290f1ee-6c54-4b01-90e6-d701748f0851", "buy_qty": 1, "item_name": "Item 1", "item_price": 19.99, "trace_id": "e135d5c7-2dbd-4880-b94b-77e3b56c2730"}}
+RECEIVER :: DEBUG – Received sell event with trace id a67f7928-e18d-459f-bac3-223eafff07b1
+RECEIVER :: DEBUG – PRODUCER::producing sell event
+RECEIVER :: DEBUG – Sent message:
+{"type": "sell", "datetime": "2023-02-23T10:58:42Z", "payload": {"item_name": "Item 1", "item_price": 19.99, "sell_id": "d290f1ee-6c54-4b01-90e6-d701748f0851", "sell_qty": 1, "trace_id": "a67f7928-e18d-459f-bac3-223eafff07b1"}}
+RECEIVER :: DEBUG – Received buy event with trace id ae4b780e-ef2b-468c-83c6-a866a65a37da
+RECEIVER :: DEBUG – PRODUCER::producing buy event
+RECEIVER :: DEBUG – Sent message:
+{"type": "buy", "datetime": "2023-03-19T19:37:16Z", "payload": {"buy_id": "d290f1ee-6c54-4b01-90e6-d701748f0851", "buy_qty": 1, "item_name": "Item 1", "item_price": 19.99, "trace_id": "ae4b780e-ef2b-468c-83c6-a866a65a37da"}}
+RECEIVER :: DEBUG – Received buy event with trace id 74587add-5d4f-44a9-8963-83417bd8a46a
+RECEIVER :: DEBUG – PRODUCER::producing buy event
+RECEIVER :: DEBUG – Sent message:
+{"type": "buy", "datetime": "2023-03-19T19:49:47Z", "payload": {"buy_id": "d290f1ee-6c54-4b01-90e6-d701748f0851", "buy_qty": 1, "item_name": "Item 1", "item_price": 19.99, "trace_id": "74587add-5d4f-44a9-8963-83417bd8a46a"}}
+RECEIVER :: DEBUG – Received sell event with trace id e35b7f5e-34b8-4537-9990-0e22f997975e
+RECEIVER :: DEBUG – PRODUCER::producing sell event
+RECEIVER :: DEBUG – Sent message:
+{"type": "sell", "datetime": "2023-03-19T19:50:01Z", "payload": {"item_name": "Item 1", "item_price": 19.99, "sell_id": "d290f1ee-6c54-4b01-90e6-d701748f0851", "sell_qty": 1, "trace_id": "e35b7f5e-34b8-4537-9990-0e22f997975e"}}

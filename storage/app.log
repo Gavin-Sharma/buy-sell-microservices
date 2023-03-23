@@ -1,0 +1,25 @@
+STORAGE :: DEBUG – Stored buy event with trace id 
+STORAGE :: DEBUG – Stored buy event with trace id 
+STORAGE :: DEBUG – Stored buy event with trace id 
+STORAGE :: DEBUG – Stored buy event with trace id 
+STORAGE :: DEBUG – Stored buy event with trace id 
+STORAGE :: DEBUG – Stored buy event with trace id 
+STORAGE :: DEBUG – Stored buy event with trace id 
+STORAGE :: DEBUG – Stored buy event with trace id 
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – CONSUMER::storing buy event
+STORAGE :: DEBUG – Received event: {'type': 'buy', 'datetime': '2023-02-23T10:58:00Z', 'payload': {'buy_id': 'd290f1ee-6c54-4b01-90e6-d701748f0851', 'buy_qty': 1, 'item_name': 'Item 1', 'item_price': 19.99, 'trace_id': 'e135d5c7-2dbd-4880-b94b-77e3b56c2730'}}
+STORAGE :: DEBUG – CONSUMER::storing buy event
+STORAGE :: DEBUG – Received event: {'type': 'buy', 'datetime': '2023-03-19T19:37:16Z', 'payload': {'buy_id': 'd290f1ee-6c54-4b01-90e6-d701748f0851', 'buy_qty': 1, 'item_name': 'Item 1', 'item_price': 19.99, 'trace_id': 'ae4b780e-ef2b-468c-83c6-a866a65a37da'}}
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – CONSUMER::storing buy event
+STORAGE :: DEBUG – Received event: {'type': 'buy', 'datetime': '2023-03-19T19:49:47Z', 'payload': {'buy_id': 'd290f1ee-6c54-4b01-90e6-d701748f0851', 'buy_qty': 1, 'item_name': 'Item 1', 'item_price': 19.99, 'trace_id': '74587add-5d4f-44a9-8963-83417bd8a46a'}}
