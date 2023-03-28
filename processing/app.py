@@ -14,6 +14,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from base import Base
 from stats import Stats
+from flask_cors import CORS
 
 DB_ENGINE = create_engine("sqlite:///stats.sqlite")
 Base.metadata.bind = DB_ENGINE
@@ -111,6 +112,7 @@ def init_scheduler():
 
 app = connexion.FlaskApp(__name__, specification_dir='')
 app.add_api("openapi.yml", base_path="/processing", strict_validation=True, validate_responses=True)
+CORS(app.app)
 
 with open('app_conf.yml', 'r') as f:
     app_config = yaml.safe_load(f.read())
