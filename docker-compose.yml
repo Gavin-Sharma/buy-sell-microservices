@@ -7,7 +7,7 @@ services:
       ZOOKEEPER_TICK_TIME: 2000
     ports:
       - 22181:2181
-
+  
   kafka:
     image: confluentinc/cp-kafka:latest
     depends_on:
@@ -29,6 +29,27 @@ services:
       MYSQL_ROOT_PASSWORD: root
     volumes:
       - data:/var/lib/mysql
+
+  storage:
+    image: storage
+    ports:
+      - "8090:8090"
+    depends_on:
+      - receiver
+
+  receiver:
+    image: receiver
+    ports:
+      - "8080:8080"
+    depends_on:
+      - kafka
+
+  processing:
+    image: processing
+    ports:
+      - "8100:8100"
+    depends_on:
+      - storage
 
 volumes:
   data:
