@@ -25,7 +25,7 @@ from pykafka.common import OffsetType
 import threading
 from threading import Thread
 
-with open('app_conf.yml', 'r') as f:
+with open('app_conf.yaml', 'r') as f:
     app_config = yaml.safe_load(f.read())
 
 DB_ENGINE = create_engine(f"mysql+pymysql://{app_config['user']}:{app_config['password']}@{app_config['hostname']}:{app_config['port']}/{app_config['db']}")
