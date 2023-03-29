@@ -14,6 +14,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from base import Base
 from stats import Stats
+
 from flask_cors import CORS
 
 DB_ENGINE = create_engine("sqlite:///stats.sqlite")
@@ -25,7 +26,7 @@ def get_latest_stats():
     session = DB_SESSION()
 
     # TODO query the session for the first Stats record, ordered by Stats.last_updated
-    result = session.query(Stats).order_by(Stats.last_updated).first()
+    result = session.query(Stats).order_by(Stats.last_updated.desc()).first()
 
     # TODO if result is not empty, convert it to a dict and return it (with status code 200)
     if result is not None:
