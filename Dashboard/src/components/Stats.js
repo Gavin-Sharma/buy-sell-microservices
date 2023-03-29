@@ -4,7 +4,7 @@ const Stats = () => {
     const [event, setEvent] = useState([])
 
     useEffect(() => {
-        fetch('http://35.86.162.242/processing/stats')
+        fetch('http://35.90.44.69/processing/stats')
         .then(res => res.json())
         .then(res => { 
             setEvent(res) 
