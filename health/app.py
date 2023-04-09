@@ -28,6 +28,8 @@ def check():
                 statuses[service_name] = "Down"
         except:
             statuses[service_name] = "Down"
+    
+    print(statuses)
     return json.dumps(statuses), 200
         
     # For each service, check if the response has status code 200, e.g. res.status_code == 200
