@@ -19,6 +19,12 @@ service_urls = {
 
 def check():
     # TODO - use try except block(s) to send a GET request to each of your services /health endpoints (receiver, storage, and processing)
+        
+    # For each service, check if the response has status code 200, e.g. res.status_code == 200
+
+    # If the status code for a given service is 200, index into the statuses dict and assign the string "Up" to the correct service key
+
+    # If the status is not 200, or an exception is thrown because the request cannot be completed, index into the statuses dict and assign the string "Down" to the correct key
     for service_name, service_url in service_urls.items():
         try:
             res = requests.get(service_url)
@@ -30,15 +36,7 @@ def check():
             statuses[service_name] = "Down"
     
     print(statuses)
-    return json.dumps(statuses), 200
-        
-    # For each service, check if the response has status code 200, e.g. res.status_code == 200
-
-    # If the status code for a given service is 200, index into the statuses dict and assign the string "Up" to the correct service key
-
-    # If the status is not 200, or an exception is thrown because the request cannot be completed, index into the statuses dict and assign the string "Down" to the correct key
-
-    #return statuses # ignore the instructions to convert this to JSON and leave as-is
+    return statuses, 200 # ignore the instructions to convert this to JSON and leave as-is
 
 app = connexion.FlaskApp(__name__, specification_dir='')
 
