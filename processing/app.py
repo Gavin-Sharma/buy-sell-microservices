@@ -21,6 +21,9 @@ DB_ENGINE = create_engine("sqlite:///stats.sqlite")
 Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
+def health():
+    return 200
+
 def get_latest_stats():
     # TODO create a session
     session = DB_SESSION()

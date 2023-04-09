@@ -51,5 +51,10 @@ services:
     depends_on:
       - storage
 
+  health:
+    image: health
+    ports:
+      - "8110:8110"
+      
 volumes:
   data:

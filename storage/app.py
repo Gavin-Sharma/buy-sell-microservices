@@ -32,6 +32,9 @@ DB_ENGINE = create_engine(f"mysql+pymysql://{app_config['user']}:{app_config['pa
 Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
+def health():
+    return 200
+
 def process_messages():
     # TODO: create KafkaClient object assigning hostname and port from app_config to named parameter "hosts"
     # and store it in a variable named 'client'

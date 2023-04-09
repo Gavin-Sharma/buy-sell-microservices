@@ -8,7 +8,10 @@ import pykafka
 from pykafka import KafkaClient
 import requests
 import uuid
-import yaml 
+import yaml
+
+def health():
+    return 200
 
 def process_event(event, endpoint):
     trace_id = str(uuid.uuid4())
